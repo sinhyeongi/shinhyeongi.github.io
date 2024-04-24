@@ -59,6 +59,9 @@ section::-webkit-scrollbar {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  width: 80%;
+  margin:auto;
+  box-sizing: border-box;
 }
 
 hr {
@@ -72,9 +75,10 @@ hr {
 }
 
 .projects article {
-  width: 250px;
+  width: 49%;
   height: 250px;
-  padding: 10px;
+
+  box-sizing: border-box;
   background-color: var(--color-bg);
 }
 
@@ -109,6 +113,7 @@ hr {
 }
 .projects article:hover {
   border-bottom: solid 2px var(--color-accent);
+  
 }
 
 .projects article:hover .project-img {
@@ -118,6 +123,7 @@ hr {
 .skills {
   display: flex;
   align-items: center;
+  
 }
 
 .skills > span {
@@ -275,10 +281,17 @@ address {
   .projects {
     order: -1;
   }
-
-  .projects article,
+  .projects article{
+    width: 100%;
+    min-height: 50vh;
+  }
   .myInfos > article {
-    width: 85vw;
+    max-width: 100vw;
     height: 70vw;
+    margin:auto;
+  }
+  .projects article:hover {
+    border-bottom: solid 0px var(--color-accent);
+    
   }
 }
