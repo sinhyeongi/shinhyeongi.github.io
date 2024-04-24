@@ -77,7 +77,6 @@ hr {
 .projects article {
   width: 49%;
   height: 250px;
-
   box-sizing: border-box;
   background-color: var(--color-bg);
 }
